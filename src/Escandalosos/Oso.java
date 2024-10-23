@@ -6,11 +6,19 @@ import java.util.List;
 public class Oso {
 	
 	private String nombre;
-
-	boolean esPeligroso;//true - false
+	boolean esproblematico;//true - false
 	String gustoMusical;
 	List<String> caracteristicasDelOso = new ArrayList<String>();
 	List<String> habilidades = new ArrayList<String>();
+	
+	public Oso(String nombre, boolean esproblematico, String gustoMusical, List<String> caracteristicasDelOso,
+			List<String> habilidades) {
+		this.nombre = nombre;
+		this.esproblematico = esproblematico;
+		this.gustoMusical = gustoMusical;
+		this.caracteristicasDelOso = caracteristicasDelOso;
+		this.habilidades = habilidades;
+	}
 	
 	public String getNombre() {
 		return nombre;
@@ -26,13 +34,13 @@ public class Oso {
 	}
 
 
-	public boolean isEsPeligroso() {
-		return esPeligroso;
+	public boolean isEsproblematico() {
+		return esproblematico;
 	}
 
 
-	public void setEsPeligroso(boolean esPeligroso) {
-		this.esPeligroso = esPeligroso;
+	public void setEproblematico(boolean esproblematico) {
+		this.esproblematico = esproblematico;
 	}
 
 
@@ -65,9 +73,9 @@ public class Oso {
 		this.habilidades = habilidades;
 	}
 	
-	public Oso (String nombre, boolean esPeligroso) {
+	public Oso (String nombre, boolean esproblematico) {
 		this.nombre = nombre;
-		this.esPeligroso = esPeligroso;
+		this.esproblematico = esproblematico;
 	}
 	
 	
